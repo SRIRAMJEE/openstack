@@ -1,0 +1,9 @@
+# Commands to disable the NetworkManager and enable network in Centos7
+
+systemctl disable NetworkManager.service
+systemctl stop NetworkManager.service
+service network start
+chkconfig network on
+
+# How to change the hostname of the system
+hostnamectl set-hostname "stack.example.com"
